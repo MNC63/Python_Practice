@@ -1,24 +1,20 @@
-# -----------
-# Project: Random PASSWORD Generator
-# Password: abcXYZ6996
-# -----------
+"""
+Project: Random PASSWORD Generator
+Password: abcXYZ6996
+"""
 
 
 import string
 import random
 
 
-# -----------
-# Variables
-# -----------
+# -----------Variables-----------
 
 LETTERS = string.ascii_letters
 NUMBERS = string.digits
 PUNCTUATION = string.punctuation
 
-# ------------
-# Functions
-# ------------
+# -----------Functions-----------
 
 
 def get_password_length():
@@ -37,9 +33,7 @@ def password_generator(length=8):
     return random_password
 
 
-# -----------
-# Main
-# -----------
+# ----------- Main--------------
 
 def main():
     password_length = get_password_length()
