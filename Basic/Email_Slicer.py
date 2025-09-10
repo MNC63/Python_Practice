@@ -1,4 +1,4 @@
-from Email_Slicer_Sub import emailProcess, printEmailInfo
+from Basic.Email_Slicer_Sub import emailProcess, printEmailInfo
 
 
 def main():
