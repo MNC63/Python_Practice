@@ -6,7 +6,7 @@ Check leap year
 class LeapYear:
     def __init__(self, year: int):
         if not isinstance(year, int):
-            raise TypeError("Year mus be an integer")
+            raise TypeError("Year must be an integer")
         if year <= 0:
             raise ValueError("Year must be a positive integer")
         self.year = year
