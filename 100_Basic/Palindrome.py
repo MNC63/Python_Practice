@@ -1,18 +1,19 @@
-"""Given a string, determine if it is a palindrome, 
-considering only alphanumeric characters and ignoring cases
+"""
+Check a string is a palindrome
 """
 
 
 class PalindromeChecker:
+    """Class to check about palindrome of a string"""
 
     def __init__(self, text: str):
         self.text = text
 
-    def _clean_text(self) -> str:
-        return "".join(c.lower() for c in self.text if c.isalnum())
+    def clean_text(self) -> str:
+        return " ".join(c.lower() for c in self.text if c.isalnum())
 
     def is_palindrome(self) -> bool:
-        cleaned = self._clean_text()
+        cleaned = self.clean_text()
         return cleaned == cleaned[::-1]
 
 
