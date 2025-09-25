@@ -24,9 +24,9 @@ class GreatestSmallest:
 def main():
     try:
         input_str = input("Enter numbers separate by space: ")
-        gsn = GreatestSmallest(input_str)
-        print(f"The greatest is: {gsn.get_greatest()}")
-        print(f"The smallest is: {gsn.get_smallest()}")
+        stat = GreatestSmallest(input_str)
+        print(f"The greatest is: {stat.get_greatest()}")
+        print(f"The smallest is: {stat.get_smallest()}")
     except ValueError as e:
         print(f"Error: {e}")
 
